@@ -1,0 +1,89 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #3e2723; /* Koyu Kahverengi Zemin */
+    color: #f5f5f5; /* Açık Beyaz Metin */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: #5d4037; /* Daha açık kahverengi kart */
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 3px solid #8d6e63;
+}
+
+h1 {
+    color: #ffb74d; /* Turuncu/Sarı Başlık */
+    border-bottom: 2px solid #6d4c41;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.durum-kutusu {
+    background-color: #4e342e;
+    border: 1px solid #795548;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#saglik-gosterge { color: #e57373; } /* Kırmızımsı */
+#aclik-gosterge { color: #ffb74d; } /* Turuncumsu */
+#eylem-gosterge { color: #81c784; } /* Yeşilsi */
+
+.kontrol-kutusu {
+    margin-bottom: 15px;
+}
+
+.kontrol-kutusu h2 {
+    color: #d7ccc8;
+    border-bottom: 1px dashed #6d4c41;
+    padding-bottom: 5px;
+}
+
+.kontrol-kutusu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #6d4c41; /* Kahverengi Buton */
+    color: white;
+    border: 1px solid #8d6e63;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.kontrol-kutusu button:hover:not(:disabled) {
+    background-color: #8d6e63;
+}
+
+.kontrol-kutusu button:disabled {
+    background-color: #5a5a5a;
+    cursor: not-allowed;
+}
+
+#tur-ilerlet-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #2e7d32; /* Koyu Yeşil */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-message {
+    margin-top: 15px;
+    font-style: italic;
+    color: #ff9800; /* Turuncu mesaj rengi */
+    min-height: 20px;
+  }
+  
