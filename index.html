@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karanlık Orman: Hayatta Kalma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌲 Karanlık Orman: Hayatta Kalma</h1>
+        
+        <div id="durum-paneli" class="durum-kutusu">
+            <p id="tur-gosterge">Tur: 1 / Kalan: 19</p>
+            <p id="saglik-gosterge">Sağlık: 100%</p>
+            <p id="aclik-gosterge">Açlık: 100%</p>
+            <p id="eylem-gosterge">Eylem Hakkı (AH): 3</p>
+        </div>
+
+        <div id="envanter-paneli" class="durum-kutusu">
+            <h2>🎒 Envanter</h2>
+            <p id="kaynak-odun">Odun: 0</p>
+            <p id="kaynak-tas">Taş: 0</p>
+            <p id="kaynak-yiyecek">Yiyecek: 0</p>
+            <p id="kaynak-ip">İp: 0</p>
+        </div>
+
+        <div id="eylem-alani" class="kontrol-kutusu">
+            <h2>Eylemler (1 AH Harca)</h2>
+            <button onclick="kaynakTopla('Odun')">Odun Topla (1-3 Adet)</button>
+            <button onclick="kaynakTopla('Taş')">Taş Topla (1-2 Adet)</button>
+            <button onclick="kaynakTopla('Yiyecek')">Yiyecek Ara (1-4 Adet)</button>
+            <button onclick="yemekYe()">Yemek Ye (+30 Açlık)</button>
+        </div>
+        
+        <div id="uretim-alani" class="kontrol-kutusu">
+            <h2>🔨 Üretim (Crafting)</h2>
+            </div>
+
+        <button onclick="sonrakiTur()" id="tur-ilerlet-btn">Turu İlerlet (Kalan AH: <span id="kalan-ah">3</span>)</button>
+
+        <div id="mesaj-kutusu" class="feedback-message">Hayatta kalmak için kaynak topla ve barınak yap.</div>
+        
+        <button class="reset-button" onclick="oyunuSifirla()">Oyunu Sıfırla</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+          
